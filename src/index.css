@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: #3f51b5;
+        --color-secondary: "#FF7F4D";
+        --color-text: #11142d;
+        --color-grey: #eef4ff;
+        --color-bg: #fff;
+        --color-error: red;
+    }
+
+    :root[class="dark"] {
+        --color-primary: #3f51b5;
+        --color-secondary: "#FF7F4D";
+        --color-text: #fff;
+        --color-bg: #10182c;
+        --color-grey: #535b6b;
+        --color-error: red;
+    }
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
